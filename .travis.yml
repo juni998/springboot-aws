@@ -20,10 +20,13 @@ notifications:
     recipients:
       - wodnrdlgla@gmail.com
 
+before_install:
+  - chmod +x gradlew
+
 before_deploy:
-  - zip -r springboot-aws
+  - zip -r springboot-aws *
   - mkdir -p deploy
-  - mv springboot-aws.zip deploy/springboot-aws .zip
+  - mv springboot-aws.zip deploy/springboot-aws.zip
 
 deploy:
   - provider: s3
