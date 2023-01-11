@@ -21,7 +21,7 @@ notifications:
       - wodnrdlgla@gmail.com
 
 before_deploy:
-  - zip -r springboot-aws *
+  - zip -r springboot-aws
   - mkdir -p deploy
   - mv springboot-aws.zip deploy/springboot-aws .zip
 
