@@ -39,6 +39,7 @@ tasks.named('test') {
 	useJUnitPlatform()
 }
 
+// no manifest attribute 방지
 jar{
 	enabled = false
 }
