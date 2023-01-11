@@ -45,7 +45,7 @@ deploy:
     secret_access_key: $AWS_SECRET_KEY
 
     bucket: springboot-study-s3
-    key: springboot-aws
+    key: springboot-aws.zip
 
     bundle_type: zip
     application: springboot-study
