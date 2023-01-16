@@ -40,6 +40,6 @@ tasks.named('test') {
 }
 
 // no manifest attribute 방지
-jar{
+jar {
 	enabled = false
 }
