@@ -24,9 +24,10 @@ notifications:
       - wodnrdlgla@gmail.com
 
 before_deploy:
-  #- zip -r springboot-aws *
-  #- mkdir -p deploy
-  #- mv springboot-aws.zip deploy/springboot-aws.zip
+  - zip -r springboot-aws *
+  - mkdir -p deploy
+  - mv springboot-aws.zip deploy/springboot-aws.zip
+
   - mkdir -p before-deploy # zip에 포함시킬 파일들을 담을 디렉토리 생성
   - cp scripts/*.sh before-deploy/
   - cp appspec.yml before-deploy/
