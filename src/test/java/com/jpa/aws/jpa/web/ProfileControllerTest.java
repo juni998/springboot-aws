@@ -52,7 +52,7 @@ class ProfileControllerTest {
     @DisplayName("active profile이 없으면 default가 조회된다")
     void active_profile() {
         //given
-        String expectedProfile = "deafult";
+        String expectedProfile = "default";
         MockEnvironment env = new MockEnvironment();
 
         ProfileController controller = new ProfileController(env);
