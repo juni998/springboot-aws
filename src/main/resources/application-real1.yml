@@ -3,7 +3,7 @@ server:
 
 spring:
   profiles:
-    include: real1, oauth, real-db
+    include: oauth, real-db
 
   jpa:
     properties:
